@@ -1,0 +1,25 @@
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+
+.activeNav {
+  @apply bg-gray-900 text-white;
+}
+
+.inactiveNav {
+  @apply text-gray-300 hover:bg-gray-700 hover:text-white;
+}
+
+.dbb {
+  @apply border-blue-500 border-2;
+}
+
+.dbr {
+  @apply border-red-500 border-2;
+}
+
+.dbg {
+  @apply border-gray-500 border-2;
+}
+
+@tailwind utilities;

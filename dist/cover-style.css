@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "brayline";
+  src: url("../fonts/brayline-webfont.woff2") format("woff2"),
+    url("../fonts/brayline-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(
+      to top,
+      #0542a8,
+      #1552c6,
+      #3072eb,
+      #71a8ee,
+      #f5a235,
+      #ba6d09,
+      #bc2909,
+      #58151a
+    )
+    no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+#container {
+  max-width: 800px;
+}
+#title {
+  font-family: "brayline";
+  transform: rotate(-20deg);
+  font-size: 10rem;
+  line-height: 5.3rem;
+  letter-spacing: -0.012em;
+  text-shadow: 2px 2px hsl(211, 100%, 50%), 2px 2px 6px hsl(0, 0%, 89%),
+    -2px -2px 6px hsl(0, 0%, 89%);
+  margin-top: 1.25rem;
+  margin-left: 0.75rem;
+}
+#author {
+  font-size: 1.5rem;
+  margin-top: -0.8rem;
+  margin-right: 3.75rem;
+  text-shadow: 1px 1px 0.03em hsl(0, 0%, 80%),
+    1px -1px 0.03em hsl(0, 0%, 80%), -1px 1px 0.03em hsl(0, 0%, 80%),
+    -1px -1px 0.03em hsl(0, 0%, 80%);
+}
+#nav {
+  margin-top: 2rem;
+  height: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav a {
+  font-size: 1.125rem;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+}
+@media (min-width: 360px) {
+  #title {
+    font-size: 12rem;
+    line-height: 6.5rem;
+    margin-top: 1.5rem;
+  }
+  #author {
+    font-size: 1.65rem;
+    margin-right: 4.2rem;
+  }
+  #nav {
+    margin-top: 2.4rem;
+    height: 6rem;
+  }
+  #nav a {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 375px) {
+  #author { margin-right: 4.75rem; }
+  #nav { margin-top: 2.6rem; }
+}
+@media (min-width: 410px) {
+  #title {
+    font-size: 14rem;
+    line-height: 8rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  #author {
+    font-size: 1.75rem;
+    margin-right: 5.5rem;
+  }
+  #nav { 
+    margin-top: 3.3rem;
+    height: 6.5rem;
+  }
+  #nav a {
+    padding: 0.67rem 2.675rem;
+  }
+}
+@media (min-width: 600px) {
+  #title {
+    font-size: 17rem;
+    line-height: 9rem;
+    margin-top: 3.5rem;
+  }
+  #author {
+    font-size: 2.2rem;
+    margin-right: 9.3rem;
+  }
+  #nav {
+    margin-top: 4rem;
+    height: 8rem;
+  }
+  #nav a {
+    padding: 0.75rem 5rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  #title {
+    font-size: 24rem;
+    line-height: 13rem;
+  }
+  #author {
+    font-size: 3rem;
+    margin-right: 12rem;
+  }
+  #nav {
+    margin-top: 6rem;
+    height: 11rem;
+  }
+  #nav a {
+    padding: 1rem 7rem;
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #container {
+    max-width: 900px;
+  }
+  #title {
+    font-size: 28rem;
+    line-height: 15rem;
+    margin-top: 3.5rem;
+  }
+  #author {
+    font-size: 3.4rem;
+    margin-top: -1.5rem;
+    margin-right: 13rem;
+  }
+  #nav {
+    margin-top: 7rem;
+    height: 12.5rem;
+  }
+  #nav a {
+    padding: 1.25rem 7.25rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  #container {
+    max-width: 100%;
+  }
+  #title {
+    font-size: 20rem;
+    transform: rotate(-16deg);
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  #author {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: -3.9rem;
+    margin-right: 1.5rem;
+  }
+  #nav {
+    margin: 5rem auto 0 auto;
+    padding-left: 3.25rem;
+    width: 45rem;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #nav a {
+    padding: 0.75rem 4.75rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  #nav { margin-top: 5.3rem; }
+}
+@media (min-width: 1600px) {
+  #nav { margin-top: 5.75rem; }
+}
+@media (min-width: 1900px) {
+  #title {
+    font-size: 24rem;
+  }
+  #author {
+    line-height: 4rem;
+    margin-top: -2.9rem;
+  }
+  #nav { 
+    padding-left: 5rem;
+    width: 50rem;
+  }
+  #nav a {
+    padding: 1rem 4.75rem;
+  }
+}
+@media (min-width: 2500px) {
+  #title {
+    font-size: 30rem;
+  }
+  #author {
+    font-size: 4.5rem;
+    line-height: 5.2rem;
+    margin-top: -2rem;
+  }
+  #nav {
+    margin-top: 8rem;
+    padding-left: 4.25rem;
+    width: 60rem;
+  }
+  #nav a {
+    padding: 1rem 4.75rem;
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "acaslon";
+  src: url("../fonts/ACaslonPro-Regular.woff2") format("woff2"),
+    url("../fonts/ACaslonPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acaslon";
+  src: url("../fonts/ACaslonPro-Italic.woff2") format("woff2"),
+    url("../fonts/ACaslonPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+#page { font-family: "acaslon", Georgia, Times, "Times New Roman", serif; }
+
+#page-header { 
+  margin-bottom: 1.5rem;
+}
+
+#page-menu-btn {
+  padding: 0 1rem;
+}
+
+#page-menu-btn svg { 
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#page-title { 
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0.9rem 0 0.4rem -2.5rem;
+}
+
+#story {
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#story p {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  max-width: 72ch;
+  margin-bottom: calc(2.1rem * 0.5814);
+}
+
+hr {
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  width: 72ch;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#mobile-nav-title {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 360px) {
+  #story { padding-top: 10rem; }
+}
+
+@media (min-width: 412px) {
+  #page-title { 
+    font-size: 1.6rem;
+    margin-left: -2.25rem;
+  }
+  #story {
+    padding-top: 10rem;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+  }
+}
+
+@media (min-width: 600px) {
+  #page-menu-btn svg { 
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  #page-title { 
+    font-size: 1.75rem;
+    margin: 1rem 0 0.5rem -2.75rem;
+  }
+  #story { padding-top: 12rem; }
+  #story p {
+    font-size: 1.6rem;
+    line-height: calc(1.6rem * 1.4);
+    margin-bottom: calc(calc(1.6rem * 1.4) * 0.5814);
+  }
+}
+
+@media (min-width: 800px) {
+  #page-title { font-size: 2rem; }
+  #page-menu-btn svg { 
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 1100px) {
+  #story { padding-top: 16rem; }
+  #story p {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.4);
+    margin-bottom: calc(calc(2rem * 1.4) * 0.5814);
+  }
+}
+
+@media (min-width: 1280px) {
+  #page-menu-btn { display: none; }
+  #page-title { 
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  #story {
+    padding-left: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-title { 
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    margin-left: -7rem;
+  }
+  #story {
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #story p {
+    font-size: 1.6rem;
+    line-height: calc(1.6rem * 1.6);
+    margin-bottom: calc(calc(1.6rem * 1.6) * 0.5814);
+  }
+}
+
+@media (min-width: 1900px) {
+  #page-title { 
+    font-size: 2.4rem;
+    margin-top: 2.2rem;
+    margin-bottom: 1.7rem;
+    margin-left: -8.5rem;
+  }
+}
+
+@media (min-width: 2500px) {
+  #page-title { 
+    font-size: 3rem;
+    margin-top: 2.75rem;
+    margin-bottom: 2.25rem;
+    margin-left: 3rem;
+  }
+  #story {
+    padding-left: 3rem;
+  }
+  #story p {
+    font-size: 2rem;
+    line-height: calc(2rem * 1.6);
+    margin-bottom: calc(calc(2rem * 1.6) * 0.5814);
+  }
+}
+
+@media (min-width: 3300px) {
+  #page-title { 
+    font-size: 3.75rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 4.2rem;
+  }
+  #story p {
+    font-size: 2.3rem;
+    line-height: calc(2.3rem * 1.7);
+    margin-bottom: calc(calc(2.3rem * 1.7) * 0.5814);
+  }
+}
+
+@media (min-width: 3800px) {
+  #page-title { 
+    font-size: 4.2rem;
+    margin-top: 4rem;
+    margin-bottom: 3.75rem;
+  }
+  #story p {
+    font-size: 2.5rem;
+    line-height: calc(2.5rem * 1.7);
+    margin-bottom: calc(calc(2.5rem * 1.7) * 0.5814);
+  }
+}

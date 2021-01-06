@@ -8,58 +8,15 @@
     </title>
     <link
       rel="stylesheet"
-      href="../css/cover.css"
+      href="dist/cover-style.css"
       type="text/css"
       charset="utf-8"
     />
-    <link href="../css/tailwind.css" rel="stylesheet" />
-    <style type="text/css">
-      body {
-        background: linear-gradient(
-            to top,
-            #0542a8,
-            #1552c6,
-            #3072eb,
-            #71a8ee,
-            #f5a235,
-            #ba6d09,
-            #bc2909,
-            #58151a
-          )
-          no-repeat;
-        padding-bottom: 5em;
-        height: 100vh;
-      }
-      #container {
-        margin: 0 auto;
-        max-width: 750px;
-      }
-      #cover-title {
-        font-family: "brayline";
-        font-size: 15rem;
-        transform: rotate(-20deg);
-        line-height: 8rem;
-        letter-spacing: -0.012em;
-        text-shadow: 2px 2px hsl(211, 100%, 50%), 2px 2px 6px hsl(0, 0%, 89%),
-          -2px -2px 6px hsl(0, 0%, 89%);
-      }
-      #author {
-        text-shadow: 1px 1px 0.03em hsl(0, 0%, 80%),
-          1px -1px 0.03em hsl(0, 0%, 80%), -1px 1px 0.03em hsl(0, 0%, 80%),
-          -1px -1px 0.03em hsl(0, 0%, 80%);
-      }
-      li {
-        border: 1px solid gray;
-        border-radius: 8px;
-        background-color: purple;
-        color: white;
-        padding: 10px 15px;
-      }
-    </style>
+    <link href="dist/tailwind.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="container">
-      <h1 id="cover-title" class="ml-2 mt-40 mb-40 text-9xl text-center">
+    <div id="container" class="">
+      <h1 id="title" class="text-center">
         T<span style="letter-spacing: -0.02em">h</span>e G<span
           style="letter-spacing: -0.02em"
           >r</span
@@ -67,29 +24,23 @@
       </h1>
       <h2
         id="author"
-        class="font-serif text-4xl italic text-right mr-20 -mt-40 mb-10 pl-20"
+        class="font-serif italic text-right"
       >
         by<br />F. Scott Fitzgerald
       </h2>
-      <ul class="flex justify-center space-x-10">
-        <button
-          type="button"
-          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      <ul id="nav" class="">
+        <li class=""><a
+          href="content/1.html"
+          class="sm:border-2 border border-gray-100 md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         >
-          Read
-        </button>
-        <button
-          type="button"
-          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          Read Now
+        </a></li>
+        <li class=""><a
+          href="https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby"
+          class="sm:border-2 border border-gray-100 md:rounded-2xl sm:rounded-xl rounded-lg shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         >
-          eBook
-        </button>
-        <button
-          type="button"
-          class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        >
-          Print
-        </button>
+          Get eBook
+        </a></li>
       </ul>
     </div>
   </body>
