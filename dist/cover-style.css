@@ -34,7 +34,7 @@ body {
   font-size: 10rem;
   line-height: 5.3rem;
   letter-spacing: -0.012em;
-  text-shadow: 1px 2px 2px white, -1px 2px 2px white;
+  text-shadow: 1px 2px 10px white, -1px 2px 10px white;
   margin-top: 1.25rem;
   margin-left: 0.75rem;
 }
