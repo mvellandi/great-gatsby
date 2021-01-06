@@ -36,6 +36,7 @@
 }
 
 #story {
+  max-width: fit-content;
   margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -49,10 +50,10 @@
 }
 
 hr {
-  margin: 4rem 0;
+  margin: 5rem auto;
   border: 0;
   height: 1px;
-  width: 72ch;
+  width: 90%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -77,8 +78,9 @@ hr {
   }
   #story {
     padding-top: 10rem;
-    /* padding-left: 1rem; */
-    /* padding-right: 1rem; */
+  }
+  hr {
+    margin: 7rem auto;
   }
 }
 
@@ -97,6 +99,9 @@ hr {
     line-height: calc(1.6rem * 1.4);
     margin-bottom: calc(calc(1.6rem * 1.4) * 0.5814);
   }
+  hr {
+    margin: 8rem auto;
+  }
 }
 
 @media (min-width: 800px) {
@@ -104,6 +109,10 @@ hr {
   #page-menu-btn svg { 
     width: 2.25rem;
     height: 2.25rem;
+  }
+  hr {
+    margin: 9rem auto;
+    height: 2px;
   }
 }
 
@@ -122,8 +131,8 @@ hr {
     margin-top: 1.75rem;
     margin-bottom: 1.25rem;
   }
-  #story {
-    padding-left: 1.8rem;
+  hr {
+    margin: 5rem auto;
   }
 }
 
@@ -132,10 +141,9 @@ hr {
     font-size: 2.2rem;
     margin-top: 2rem;
     margin-bottom: 0.7rem;
-    margin-left: -7rem;
   }
-  #story {
-    padding-left: 5rem;
+  hr {
+    margin: 6rem auto;
   }
 }
 
@@ -152,7 +160,6 @@ hr {
     font-size: 2.4rem;
     margin-top: 2.2rem;
     margin-bottom: 1.7rem;
-    margin-left: -8.5rem;
   }
 }
 
@@ -161,10 +168,6 @@ hr {
     font-size: 3rem;
     margin-top: 2.75rem;
     margin-bottom: 2.25rem;
-    margin-left: 3rem;
-  }
-  #story {
-    padding-left: 3rem;
   }
   #story p {
     font-size: 2rem;
@@ -178,7 +181,6 @@ hr {
     font-size: 3.75rem;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
-    margin-left: 4.2rem;
   }
   #story p {
     font-size: 2.3rem;
