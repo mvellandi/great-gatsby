@@ -58,17 +58,18 @@ hr {
 }
 
 #mobile-nav-title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: white;
 }
 
 .nav-item {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 @media (min-width: 360px) {
   #story { padding-top: 10rem; }
+  .nav-item { font-size: 1.35rem; }
 }
 
 @media (min-width: 412px) {
