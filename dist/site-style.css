@@ -14,9 +14,11 @@
   font-style: italic;
 }
 
-#page { font-family: "acaslon", Georgia, Times, "Times New Roman", serif; }
+#page {
+  font-family: "acaslon", Georgia, Times, "Times New Roman", serif;
+}
 
-#page-header { 
+#page-header {
   margin-bottom: 1.5rem;
 }
 
@@ -24,19 +26,20 @@
   padding: 0 1rem;
 }
 
-#page-menu-btn svg { 
+#page-menu-btn svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-#page-title { 
+#page-title {
   font-size: 1.5rem;
   font-style: italic;
   margin: 0.9rem 0 0.4rem -2.5rem;
 }
 
 #story {
-  max-width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -49,31 +52,85 @@
   margin-bottom: calc(2.1rem * 0.5814);
 }
 
+#story .poem {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+#story .citation {
+  /* max-width: 72ch; */
+  margin: 4rem 0;
+  padding: 0 3rem;
+}
+
+#story .continue {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(208, 100%, 63%);
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
 hr {
   margin: 5rem auto;
   border: 0;
   height: 1px;
   width: 90%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
-#mobile-nav-title {
-  font-size: 1.3rem;
+#publisher {
+  font-size: 1.75rem;
+  padding-left: 0.75rem;
   color: white;
+}
+
+#mobile-nav-items {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+#mobile-nav-items .nav-item {
+  justify-content: center;
 }
 
 .nav-item {
   font-size: 1.25rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
 }
 
 @media (min-width: 360px) {
-  #story { padding-top: 10rem; }
-  .nav-item { font-size: 1.35rem; }
+  #mobile-nav-items {
+    height: 60vh;
+  }
+  #story {
+    padding-top: 10rem;
+  }
+}
+
+@media (min-height: 620px) {
+  #mobile-nav-items {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 412px) {
-  #page-title { 
+  #page-title {
     font-size: 1.6rem;
     margin-left: -2.25rem;
   }
@@ -85,16 +142,29 @@ hr {
   }
 }
 
+@media (min-height: 695px) {
+  #mobile-nav-items {
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+}
+
 @media (min-width: 600px) {
-  #page-menu-btn svg { 
+  #mobile-nav-items .nav-item {
+    justify-content: start;
+    padding-left: 1.8rem;
+  }
+  #page-menu-btn svg {
     width: 1.75rem;
     height: 1.75rem;
   }
-  #page-title { 
+  #page-title {
     font-size: 1.75rem;
     margin: 1rem 0 0.5rem -2.75rem;
   }
-  #story { padding-top: 12rem; }
+  #story {
+    padding-top: 12rem;
+  }
   #story p {
     font-size: 1.6rem;
     line-height: calc(1.6rem * 1.4);
@@ -106,8 +176,10 @@ hr {
 }
 
 @media (min-width: 800px) {
-  #page-title { font-size: 2rem; }
-  #page-menu-btn svg { 
+  #page-title {
+    font-size: 2rem;
+  }
+  #page-menu-btn svg {
     width: 2.25rem;
     height: 2.25rem;
   }
@@ -118,7 +190,12 @@ hr {
 }
 
 @media (min-width: 800px) and (min-height: 1100px) {
-  #story { padding-top: 16rem; }
+  #mobile-nav-items .nav-item {
+    font-size: 1.75rem;
+  }
+  #story {
+    padding-top: 16rem;
+  }
   #story p {
     font-size: 2rem;
     line-height: calc(2rem * 1.4);
@@ -127,8 +204,13 @@ hr {
 }
 
 @media (min-width: 1280px) {
-  #page-menu-btn { display: none; }
-  #page-title { 
+  .nav-item {
+    padding-left: 1.8rem;
+  }
+  #page-menu-btn {
+    display: none;
+  }
+  #page-title {
     margin-top: 1.75rem;
     margin-bottom: 1.25rem;
   }
@@ -138,7 +220,7 @@ hr {
 }
 
 @media (min-width: 1440px) {
-  #page-title { 
+  #page-title {
     font-size: 2.2rem;
     margin-top: 2rem;
     margin-bottom: 0.7rem;
@@ -149,6 +231,9 @@ hr {
 }
 
 @media (min-width: 1600px) {
+  .nav-item {
+    font-size: 1.35rem;
+  }
   #story p {
     font-size: 1.6rem;
     line-height: calc(1.6rem * 1.6);
@@ -157,7 +242,7 @@ hr {
 }
 
 @media (min-width: 1900px) {
-  #page-title { 
+  #page-title {
     font-size: 2.4rem;
     margin-top: 2.2rem;
     margin-bottom: 1.7rem;
@@ -165,7 +250,7 @@ hr {
 }
 
 @media (min-width: 2500px) {
-  #page-title { 
+  #page-title {
     font-size: 3rem;
     margin-top: 2.75rem;
     margin-bottom: 2.25rem;
@@ -178,7 +263,7 @@ hr {
 }
 
 @media (min-width: 3300px) {
-  #page-title { 
+  #page-title {
     font-size: 3.75rem;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
@@ -191,7 +276,7 @@ hr {
 }
 
 @media (min-width: 3800px) {
-  #page-title { 
+  #page-title {
     font-size: 4.2rem;
     margin-top: 4rem;
     margin-bottom: 3.75rem;

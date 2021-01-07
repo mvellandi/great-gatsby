@@ -12,9 +12,7 @@ function setNavigation(num) {
       { id: 6, title: "Six", url: "6.html" },
       { id: 7, title: "Seven", url: "7.html" },
       { id: 8, title: "Eight", url: "8.html" },
-      { id: 8, title: "Eight", url: "8.html" },
-      { id: 8, title: "Eight", url: "8.html" },
-      { id: 8, title: "Eight", url: "8.html" },
+      { id: 9, title: "Nine", url: "9.html" },
     ],
   };
 }

@@ -75,18 +75,37 @@
             <!-- <div class="flex-shrink-0 flex items-center px-4">
               <h1 id="mobile-nav-title">The Great Gatsby</h1>
             </div> -->
-            <div class="mt-2 flex-1 h-0 overflow-y-auto">
-              <nav class="px-2 space-y-1">
+            <div
+              class="mt-2 flex flex-col justify-between flex-1 overflow-y-auto"
+            >
+              <nav id="mobile-nav-items">
                 <template x-for="navItem in navItems" :key="navItem.id">
-                  <a
+                  <!-- <a
                     x-bind:href="navItem.url"
                     class="nav-item group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                    :class="{'activeNav': navItem.id == activeNavItem, 'inactiveNav': navItem.id !== activeNavItem }"
+                    x-text="navItem.title"
+                  ></a> -->
+                  <a
+                    x-bind:href="navItem.url"
+                    class="nav-item group rounded-md"
                     :class="{'activeNav': navItem.id == activeNavItem, 'inactiveNav': navItem.id !== activeNavItem }"
                     x-text="navItem.title"
                   ></a>
                 </template>
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               </nav>
+              <div class="flex-shrink-0 flex justify-center items-center px-4">
+                <img
+                  src="../janesberry1.svg"
+                  alt="janesberry logo"
+                  height="70"
+                  width="70"
+                />
+                <h2 id="publisher">
+                  <a href="https://www.janesberry.com/">Janesberry</a>
+                </h2>
+              </div>
             </div>
           </div>
           <div class="flex-shrink-0 w-14" aria-hidden="true">
@@ -101,7 +120,9 @@
           <!-- Sidebar component, swap this element with another sidebar if you like -->
           <div class="flex flex-col h-0 flex-1">
             <div class="flex-1 flex flex-col overflow-y-auto">
-              <nav class="flex-1 px-2 py-4 bg-gray-800 space-y-1">
+              <nav
+                class="flex flex-col justyify-between flex-1 px-2 py-4 bg-gray-800 space-y-1"
+              >
                 <!-- Current: "bg-gray-200 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
                 <template x-for="navItem in navItems" :key="navItem.id">
                   <a
@@ -112,6 +133,19 @@
                   ></a>
                 </template>
               </nav>
+              <div
+                class="flex-shrink-0 flex justify-center items-center px-4 pb-4 bg-gray-800"
+              >
+                <img
+                  src="../janesberry1.svg"
+                  alt="janesberry logo"
+                  height="70"
+                  width="70"
+                />
+                <h2 id="publisher">
+                  <a href="https://www.janesberry.com/">Janesberry</a>
+                </h2>
+              </div>
             </div>
           </div>
         </div>
@@ -1001,6 +1035,9 @@
                   When I looked once more for Gatsby he had vanished, and I was
                   alone again in the unquiet darkness.
                 </p>
+                <nav class="continue">
+                  <a href="2.html">Continue Reading</a>
+                </nav>
               </article>
               <!-- /End replace -->
             </div>
