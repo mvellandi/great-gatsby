@@ -34,7 +34,7 @@ body {
   font-size: 10rem;
   line-height: 5.3rem;
   letter-spacing: -0.012em;
-  /* text-shadow: #fc0 1px 0 10px; */
+  text-shadow: #fc0 1px 0 10px;
   margin-top: 1rem;
   margin-left: 0.75rem;
 }
@@ -77,7 +77,9 @@ body {
   }
 }
 @media (min-width: 375px) {
-  #author { margin-right: 4.75rem; }
+  #author {
+    margin-right: 4.75rem;
+  }
 }
 @media (min-width: 410px) {
   #title {
@@ -90,7 +92,7 @@ body {
     font-size: 1.75rem;
     margin-right: 5.5rem;
   }
-  #nav { 
+  #nav {
     margin-top: 3.3rem;
     height: 6.5rem;
   }
@@ -188,10 +190,14 @@ body {
   }
 }
 @media (min-width: 1400px) {
-  #nav { margin-top: 5.3rem; }
+  #nav {
+    margin-top: 5.3rem;
+  }
 }
 @media (min-width: 1600px) {
-  #nav { margin-top: 5.75rem; }
+  #nav {
+    margin-top: 5.75rem;
+  }
 }
 @media (min-width: 1900px) {
   #title {
@@ -201,7 +207,7 @@ body {
     line-height: 4rem;
     margin-top: -2.9rem;
   }
-  #nav { 
+  #nav {
     padding-left: 5rem;
     width: 50rem;
   }
