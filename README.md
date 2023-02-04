@@ -6,4 +6,4 @@ When this classic story from F. Scott Fitgerald went into the public domain, I d
 
 [See full project details here](https://www.vellandi.net/projects/great-gatsby)
 
-[Read the online book here](http://greatgatsby.vellandi.net/)
+[Read the online book here](http://great-gatsby.vellandi.net/)
