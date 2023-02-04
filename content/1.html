@@ -95,10 +95,17 @@
                 </template>
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               </nav>
-              <div class="flex-shrink-0 flex items-center px-4">
-                <h2 id="publisher">
-                  <a href="https://www.vellandi.net/projects/great-gatsby/">Vellandi</a>
-                </h2>
+              <div class="flex justify-center sm:justify-start sm:ml-7">
+                <div class="flex flex-col text-white">
+                  <p>produced by:</p>
+                  <h2>
+                    <a
+                      id="brand"
+                      href="https://www.vellandi.net/projects/great-gatsby/"
+                      >Vellandi</a
+                    >
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
@@ -115,25 +122,32 @@
           <div class="flex flex-col h-0 flex-1">
             <div class="flex-1 flex flex-col overflow-y-auto">
               <nav
-                class="flex flex-col justyify-between flex-1 px-2 py-4 bg-gray-800 space-y-1"
+                class="flex flex-col justify-between flex-1 px-2 py-4 bg-gray-800 space-y-1"
               >
                 <!-- Current: "bg-gray-200 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
-                <template x-for="navItem in navItems" :key="navItem.id">
-                  <a
-                    x-bind:href="navItem.url"
-                    class="nav-item group flex items-center px-2 py-2 rounded-md"
-                    :class="{'activeNav': navItem.id == activeNavItem, 'inactiveNav': navItem.id !== activeNavItem }"
-                    x-text="navItem.title"
-                  ></a>
-                </template>
+                <div>
+                  <template x-for="navItem in navItems" :key="navItem.id">
+                    <a
+                      x-bind:href="navItem.url"
+                      class="nav-item group flex items-center px-2 py-2 rounded-md"
+                      :class="{'activeNav': navItem.id == activeNavItem, 'inactiveNav': navItem.id !== activeNavItem }"
+                      x-text="navItem.title"
+                    ></a>
+                  </template>
+                </div>
+                <div class="ml-6 flex justify-start">
+                  <div class="flex flex-col text-white">
+                    <p>produced by:</p>
+                    <h2>
+                      <a
+                        id="brand"
+                        href="https://www.vellandi.net/projects/great-gatsby/"
+                        >Vellandi</a
+                      >
+                    </h2>
+                  </div>
+                </div>
               </nav>
-              <div
-                class="flex-shrink-0 flex items-center px-4 pb-4 bg-gray-800"
-              >
-                <h2 id="publisher">
-                  <a href="https://www.vellandi.net/projects/great-gatsby/">Vellandi</a>
-                </h2>
-              </div>
             </div>
           </div>
         </div>

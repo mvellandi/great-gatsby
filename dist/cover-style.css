@@ -7,6 +7,10 @@
 }
 
 body {
+  background-color: #58151a;
+}
+
+#background-gradient {
   background: linear-gradient(
       to top,
       #0542a8,
