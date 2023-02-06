@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"></script>
     <script src="../nav.js"></script>
   </head>
-  <body>
+  <body class="h-full">
     <div
       x-data="setNavigation(1)"
-      class="h-screen flex overflow-hidden bg-gray-100"
+      class="min-h-full flex overflow-hidden bg-gray-100"
     >
       <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
       <div id="mobile-nav" x-show="mobileNavOpen" class="xl:hidden">
